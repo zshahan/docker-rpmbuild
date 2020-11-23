@@ -9,6 +9,7 @@ RUN yum install -y gcc gcc-c++ \
                    yum-utils rpm-build \
                    zlib-devel openssl-devel \
                    pcre-devel \
+                   perl-devel \
                    && yum clean all
 
 RUN useradd builder -u 1000 -m -G users,wheel && \
