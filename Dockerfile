@@ -10,6 +10,7 @@ RUN yum install -y gcc gcc-c++ \
                    zlib-devel openssl-devel \
                    pcre-devel \
                    perl-devel \
+                   perl-ExtUtils-Embed \
                    && yum clean all
 
 RUN useradd builder -u 1000 -m -G users,wheel && \
